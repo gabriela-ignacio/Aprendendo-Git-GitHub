@@ -3,11 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu primeiro site em repositório</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Página Principal</title>
 </head>
+
 <body>
-    <h1>Olá, Mundo!</h1>
-    <hr>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nostrum voluptas dolor, ipsa vero non consectetur consequatur. Veniam, provident fugit rem ullam neque, quaerat voluptatum quo unde ea, mollitia facere?</p>
+    <header>
+        <h1>DeskArt</h1>
+        <nav>
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="pagina_em_desenvolvimento.html">Institucional</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="busca">
+            <h2>Encontre um ponto de coleta perto de você</h2>
+
+            <form action="#" method="get">
+                <label for="cep">CEP:</label>
+                <input type="text" id="cep" name="cep" placeholder="Digite o CEP">
+
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" name="cidade" placeholder="Digite a cidade">
+
+                <label for="bairro">Bairro:</label>
+                <input type="text" id="bairro" name="bairro" placeholder="Digite o bairro">
+
+                <label for="material">Tipo de material:</label>
+                <select id="material" name="material">
+                    <option value="">Selecione...</option>
+                    <option value="papel">Papel</option>
+                    <option value="plastico">Plástico</option>
+                    <option value="vidro">Vidro</option>
+                    <option value="metal">Metal</option>
+                    <option value="eletronico">Eletrônico</option>
+                </select>
+
+                <button type="submit">Buscar ponto de coleta</button>
+            </form>
+        </section>
+
+        <aside class="imagem">
+            <img src="imagens/coleta-seletiva.jpg" alt="Pontos de coleta seletiva">
+        </aside>
+    </main>
+
+    <!-- ================== RODAPÉ ================== -->
+    <footer>
+        <p>© 2025 DeskArt - Todos os direitos reservados.</p>
+    </footer>
+   
 </body>
 </html>
