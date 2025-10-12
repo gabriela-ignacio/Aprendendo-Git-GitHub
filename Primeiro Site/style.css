@@ -1,0 +1,11 @@
+body {
+    font-family: Arial, sans-serif, montserrat;
+    background-color: #000;
+    margin: 100px;
+    color: aqua;
+}
+
+body h1 {
+    color:blueviolet;
+    text-align: center;
+}
