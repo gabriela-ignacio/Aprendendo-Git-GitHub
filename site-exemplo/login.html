@@ -1,44 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - DeskArt</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles-login.css">
+    <title>Página de Login</title>
+</head>     
+
 <body>
-
-    <header>
-        <h1>DeskArt</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="cadastro.html">Cadastro</a></li>
-                <li><a href="institucional.html">Institucional</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section class="login-container">
-            <h2>Entrar na conta</h2>
-            <form action="#" method="post">
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
-
-                <label for="senha">Senha:</label>
-                <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
-
-                <button type="submit">Entrar</button>
-
-                <p class="cadastro">Ainda não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
-            </form>
-        </section>
+    <main class="container">
+        <form>
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="email" placeholder="Digite seu email">
+                <i class="bx bxs-user"></i>
+            </div>
+            <div class="input-password">
+                <input type="password" placeholder="Digite sua senha">
+                <i class="bx bxs-lock-alt"></i>
+            </div>
+            <div class="remember-forgot">
+                <label>
+                    <input type="checkbox">
+                    Lembrar senha
+                </label>
+                <a href="redefinicao_senha.html">Esqueci a senha</a>
+            </div>
+            <button type="submit" class="login">Entrar</button>
+            <div class="register-link">
+                <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
+            </div>
+        </form>
     </main>
-
-    <footer>
-        <p>© 2025 DeskArt - Todos os direitos reservados.</p>
-    </footer>
-
 </body>
+
 </html>
