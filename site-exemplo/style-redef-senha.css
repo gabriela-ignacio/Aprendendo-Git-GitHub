@@ -6,15 +6,20 @@
 }
 
 body {
-    display: flex;
     justify-content: flex-start; /* <-- joga o conteúdo para a esquerda */
-    align-items: center; /* mantém centralizado na vertical */
     min-height: 100vh;
     background: url(imagens/fundo_login.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    padding-left: 80px; /* adiciona um espacinho da borda esquerda */
+}
+
+main.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px; /* espaço para o header */
+  height: calc(100vh - 100px); /* ajusta considerando o header */
 }
 
 .container {

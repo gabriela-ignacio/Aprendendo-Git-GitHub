@@ -6,7 +6,7 @@
 }
 
 body {
-    min-height: 80vh;
+    min-height: 100vh;
     background: url(imagens/fundo_login.jpg);
     background-size: cover;
     background-position: center;
