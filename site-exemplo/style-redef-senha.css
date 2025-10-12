@@ -7,18 +7,19 @@
 
 body {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start; /* <-- joga o conteúdo para a esquerda */
+    align-items: center; /* mantém centralizado na vertical */
     min-height: 100vh;
     background: url(imagens/fundo_login.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    padding-left: 80px; /* adiciona um espacinho da borda esquerda */
 }
 
 .container {
     width: 420px;
-    background: transparent;
+    background: linear-gradient(rgba(0, 0, 0, 0.4));
     border: 2px solid rgba(255, 255, 255, 0.2);
     border-radius: 10px;
     color: #fff;

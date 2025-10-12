@@ -6,19 +6,26 @@
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    min-height: 80vh;
     background: url(imagens/fundo_login.jpg);
-    background-size:cover;
-    background-position:center;
+    background-size: cover;
+    background-position: center;
     background-attachment: fixed;
+    margin: 0;
+}
+
+main.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px; /* espaço para o header */
+  height: calc(100vh - 100px); /* ajusta considerando o header */
 }
 
 .container {
     width: 420px;
-    background: transparent;
+    margin: 0 auto; /* centraliza horizontalmente */
+    background: linear-gradient(rgba(0, 0, 0, 0.4));
     border: 2px solid rgba(255, 255, 255, 0.2);
     border-radius: 10px;
     color: #fff;
@@ -29,6 +36,7 @@ body {
 .container h1 {
     text-align: center;
     font-size: 36px;
+    text-shadow: 5px -1px 5px rgba(28, 110, 164, 0.25);
 }
 
 .input-box {
@@ -51,9 +59,9 @@ body {
     border-bottom: 2px solid rgba(255, 255, 255, 0.2);
 }
 
-.input-box input::placeholder{
+.input-box input::placeholder {
     color: #c5c5c5;
-} 
+}
 
 .input-box i {
     position: absolute;
@@ -85,9 +93,9 @@ body {
     border-bottom: 2px solid rgba(255, 255, 255, 0.2);
 }
 
-.input-password input::placeholder{
+.input-password input::placeholder {
     color: #c5c5c5;
-} 
+}
 
 .input-password i {
     position: absolute;
@@ -106,6 +114,7 @@ body {
     align-items: center;
     font-size: 14px;
 }
+
 .remember-forgot label input {
     accent-color: #fff;
     margin-right: 5px;
@@ -114,6 +123,7 @@ body {
 .remember-forgot a {
     color: #fff;
     text-decoration: none;
+    font-weight: 600;
 }
 
 .remember-forgot a:hover {
@@ -151,7 +161,7 @@ body {
 .register-link a {
     color: #fff;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .register-link a:hover {
