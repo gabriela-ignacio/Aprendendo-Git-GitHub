@@ -1,0 +1,5 @@
+* { margin: 0px; padding: 0px;}
+div { height: 200px; border-bottom: 4px solid white;}
+#d1 { background-color: aquamarine;}
+#d2 { background-image: url(img/praia.jpg);}
+#d3 { background-image: linear-gradient(white,red);}
