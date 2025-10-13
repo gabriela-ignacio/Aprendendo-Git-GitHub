@@ -18,7 +18,7 @@ main.container {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 5px 30px;
+  margin: 5px 100px;
   padding-top: 60px; /* espaço para o header */
   height: calc(100vh - 100px); /* ajusta considerando o header */
 }
