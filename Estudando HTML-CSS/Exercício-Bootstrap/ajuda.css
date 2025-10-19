@@ -1,0 +1,14 @@
+nav .container-fluid {
+    background-color: darkgreen;
+}
+
+nav .container-fluid .logo {
+    width: 150px;
+    height: auto;
+}
+
+.carousel-inner img {
+    width: 800px;
+    height: 320px;
+    object-fit: cover;
+}
