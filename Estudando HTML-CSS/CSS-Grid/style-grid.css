@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    grid-template-areas: "cabecalho"
+        "conteudo"
+        "periferico"
+        "rodape";
+    grid-gap: 5px 20px;
+}
+
+header {
+    grid-area: cabecalho;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    background-color: seagreen;
+    max-block-size: 100px;
+}
+
+.content {
+    grid-area: conteudo;
+
+}
+
+.menu-principal {
+    display: block;
+}
+
+.menu-principal>ul {
+    list-style: none;
+    padding: 5px;
+    background-color: lightgray;
+
+}
+
+.menu-principal>ul>li {
+    display: block;
+    padding: 10px;
+    background-color: #fff;
+    border-bottom: 1px solid gray;
+    text-align: center;
+}
+
+.menu-principal>ul>li:hover {
+    background-color: blue;
+    cursor: pointer;
+    color: white;
+}
+
+aside {
+    grid-area: periferico;
+}
+
+aside>.box-lateral {
+    background-color: lightgray;
+    box-shadow: 2px 2px gray;
+    padding-bottom: 10px;
+}
+
+.box-noticia p,
+.box-noticia h2 {
+    margin-top: 2px;
+}
+
+.box-lateral input {
+    margin: 10px auto;
+}
+
+@media (min-width: 700px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 250px 1fr;
+        grid-auto-rows: 150px 1fr 120px;
+        grid-template-areas: "cabecalho cabecalho"
+            "periferico conteudo"
+            "rodape rodape";
+        grid-gap: 5px 20px;
+    }
+
+    .logo {
+        width: 200px;
+        float: left;
+    }
+
+    .menu-principal {
+        float: right;
+    }
+
+    .menu-principal>ul>li {
+        display: inline-block;
+        border-bottom: none;
+        border-left: 1px solid gray;
+        padding: 10px 20px;
+    }
+
+    .menu-principal>ul>li:first-child {
+        border-left: none;
+    }
+
+}
